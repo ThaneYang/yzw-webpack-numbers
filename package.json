@@ -1,0 +1,28 @@
+{
+  "name": "yzw-webpack-numbers",
+  "version": "1.0.5",
+  "description": "如何通过webpack来打包库",
+  "main": "dist/yzw-webpack-numbers.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:node": "webpack && cp dist/yzw-webpack-numbers.js node/ && node node/example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-library",
+    "bundling",
+    "library"
+  ],
+  "author": "yzw",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "lodash": "^4.17.5",
+    "webpack": "^3.5.5"
+  }
+}
